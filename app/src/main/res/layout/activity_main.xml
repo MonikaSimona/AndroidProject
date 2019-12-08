@@ -6,9 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:columnCount="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button"/>
+
+        <Space/>
+    </GridLayout>
+
+
 
 
 
