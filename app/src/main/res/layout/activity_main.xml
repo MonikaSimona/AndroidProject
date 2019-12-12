@@ -1,85 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
 
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginEnd="411dp">
 
-        android:minHeight="200dp"
-        app:cardBackgroundColor="#5BFF9284"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+
+            android:minHeight="200dp"
+            app:cardBackgroundColor="#5BFF9284">
 
 
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/name1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name Surname"
                 android:textSize="22sp"
 
-                app:layout_constraintBottom_toTopOf="@+id/image"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/desc"
+                android:id="@+id/desc1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="5dp"
                 android:text="This is the message"
 
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+                />
 
             <androidx.appcompat.widget.AppCompatTextView
 
-                android:id="@+id/appCompatTextView2"
+                android:id="@+id/appCompatTextView21"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="5dp"
 
                 android:text="Hello"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/desc"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image" />
+                android:textSize="18sp" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image"
+                android:id="@+id/image1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_launcher_foreground"
-                app:layout_constraintBottom_toTopOf="@+id/appCompatTextView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name" />
+                android:src="@drawable/catty" />
 
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/leftChip"
+                android:id="@+id/leftChip1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -89,15 +70,10 @@
                 app:closeIcon="@drawable/heart"
                 app:closeIconEndPadding="6dp"
                 app:closeIconStartPadding="0dp"
-                app:closeIconVisible="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/rightChip"
-                app:layout_constraintHorizontal_bias="0.65"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/desc" />
+                app:closeIconVisible="true" />
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/rightChip"
+                android:id="@+id/rightChip1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="210dp"
@@ -105,19 +81,163 @@
                 app:chipIconVisible="true"
 
                 app:closeIcon="@drawable/comment"
-                app:closeIconStartPadding="0dp"
                 app:closeIconEndPadding="6dp"
-                app:closeIconVisible="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/desc" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                app:closeIconStartPadding="0dp"
+                app:closeIconVisible="true" />
 
 
+        </com.google.android.material.card.MaterialCardView>
 
-    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:minHeight="200dp"
+            app:cardBackgroundColor="#5BFF9284">
 
 
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Surname"
+                android:textSize="22sp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/desc2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:text="This is the message"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/appCompatTextView22"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+
+                android:text="Hello"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/kitten" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/leftChip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:checkable="true"
+                app:chipIconVisible="true"
+                app:closeIcon="@drawable/heart"
+                app:closeIconEndPadding="6dp"
+                app:closeIconStartPadding="0dp"
+                app:closeIconVisible="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/rightChip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="210dp"
+                android:checkable="true"
+                app:chipIconVisible="true"
+
+                app:closeIcon="@drawable/comment"
+                app:closeIconEndPadding="6dp"
+                app:closeIconStartPadding="0dp"
+                app:closeIconVisible="true" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:minHeight="200dp"
+            app:cardBackgroundColor="#5BFF9284"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Surname"
+                android:textSize="22sp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/desc3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:text="This is the message"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/appCompatTextView23"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+
+                android:text="Hello"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/catsad" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/leftChip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:checkable="true"
+                app:chipIconVisible="true"
+                app:closeIcon="@drawable/heart"
+                app:closeIconEndPadding="6dp"
+                app:closeIconStartPadding="0dp"
+                app:closeIconVisible="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/rightChip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:checkable="true"
+                app:chipIconVisible="true"
+
+                app:closeIcon="@drawable/comment"
+                app:closeIconEndPadding="6dp"
+                app:closeIconStartPadding="0dp"
+                app:closeIconVisible="true" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
